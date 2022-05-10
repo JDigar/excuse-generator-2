@@ -9,11 +9,24 @@
     <title>Generador de excusas</title>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 id="excuse">!NO VAS A CREER LO QUE ME HA PASADO!</h1>
-      <h3 id="the-excuse"></h3>
-      <button id="btn">Generate New Excuse</button>
+    <div class="card">
+      <div class="card-header text-center">
+        <h2><strong>GENERA TU EXCUSA</strong></h2>
+      </div>
+      <div class="card-body">
+      
+        <div class="container-fluid text-center">
+          <h1 id="excuse">!NO VAS A CREER LO QUE ME HA PASADO!</h1>
+            <div class="alert alert-danger" role="alert">
+                <h3 id="the-excuse"></h3>
+            </div>
+          <!-- <button id="btn">Generate New Excuse</button> -->
+          <button id="btn" type="button" class="btn btn-primary active " data-bs-toggle="button" autocomplete="off" aria-pressed="true">Generar nueva excusa</button>
+        </div>
+  
+      </div>
     </div>
+
     <script src="app.js"></script>
   </body>
 </html>

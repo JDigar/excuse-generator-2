@@ -1,11 +1,11 @@
 window.onload = function() {
   document.querySelector('#btn').addEventListener("click", function() {
-    document.querySelector('#the-excuse').innerHTML = randomFull;
+    document.querySelector('#the-excuse').innerHTML = randomFull();
   })
   
   }; 
 
-
+  let randomFull = function() {
     
     let who = ["El perro", "Mi sobrino", "Mi abuela", "Mi serpiente"];
     let what = [
@@ -21,13 +21,13 @@ window.onload = function() {
       "mientras lo hacia"
     ];
   
-    let random1 = Math.floor(Math.random() * (who.length - 0)) + 0;
-    let random2 = Math.floor(Math.random() * (what.length - 0)) + 0;
-    let random3 = Math.floor(Math.random() * (when.length - 0)) + 0;
+    let random1 = Math.floor(Math.random() * who.length);
+    let random2 = Math.floor(Math.random() * what.length);
+    let random3 = Math.floor(Math.random() * when.length);
   
-    let randomFull = who[random1] + " " + what[random2] + " " + when[random3];
+    return who[random1] + " " + what[random2] + " " + when[random3];
  
-   
+  };
   
    
   
